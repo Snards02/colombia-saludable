@@ -1,0 +1,91 @@
+/* Navbar styles */
+.logo {
+    background-color: transparent;
+    margin-top: 0px;
+    border-radius: 0% !important;
+    width: 150px !important;
+    border-color: transparent !important;
+}
+
+.logo-container {
+    width: 600px !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-transparent {
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    box-shadow: var(--shadow-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.navbar-text-black, 
+.navbar-text-black .nav-link, 
+.navbar-text-black a, 
+.navbar-text-black i {
+    color: var(--text-primary) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary) !important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 0 0.25rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-blue) !important;
+    background-color: var(--bg-light-blue);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-blue) !important;
+    background-color: var(--bg-light-blue);
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: var(--bg-light-blue);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(30, 136, 229, 0.15);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2830, 136, 229, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        width: 100% !important;
+        justify-content: space-between;
+    }
+    
+    .navbar-nav {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: var(--bg-secondary);
+        border-radius: 12px;
+        border: 1px solid var(--border-light);
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.25rem 0;
+        text-align: center;
+    }
+}

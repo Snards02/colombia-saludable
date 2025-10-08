@@ -1,0 +1,53 @@
+<div class="p-4">
+    <h1>Gestión de Proyectos</h1>
+    <button class="btn btn-warning mb-3" (click)="pagina = 1">Lista de Proyectos</button>
+    <button class="btn btn-warning mb-3" (click)="pagina = 2">+ Nuevo Proyecto</button>
+    <div class="table-responsive" *ngIf="pagina === 1">
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cliente</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Edificio A</td>
+                    <td>Cliente X</td>
+                    <td>En curso</td>
+                    <td><button class="btn btn-sm btn-primary">Editar</button> <button
+                            class="btn btn-sm btn-danger">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="pagina === 2">
+        <form [formGroup]="proyectoForm" (ngSubmit)="agregarProyecto()">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del Proyecto</label>
+                <input type="text" formControlName="nombre" class="form-control" id="nombre"
+                    placeholder="Ingrese el nombre del proyecto">
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea type="text" formControlName="descripcion" class="form-control" id="descripcion"
+                    placeholder="Ingrese la descripción del proyecto"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Párrafo</label>
+                <textarea type="text" formControlName="parrafo" rows="5" class="form-control" id="cliente"
+                    placeholder="Ingrese el nombre del cliente"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="imagenes" class="form-label">Imágenes</label>
+                <input type="file" id="imagenes" (change)="onFileChange($event)" multiple class="form-control"
+                    accept="image/*">
+            </div>
+
+            <button type="submit" class="btn btn-success">Guardar Proyecto</button>
+        </form>
+
+    </div>
+</div>

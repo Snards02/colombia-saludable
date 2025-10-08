@@ -1,0 +1,49 @@
+<br>
+<section class="servicios">
+  <div class="container">
+    <h5 class="section-subtitle">Encuentra tu punto de atención más cercano</h5>
+
+    <div class="servicios-grid">
+
+
+      <h2>Accede a la salud más cerca de ti</h2>
+      <div class="cards">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Campañas</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Campaña de vacunación</p>
+            <p>25 oct = 3 nov</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Servicios</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Hospital Santa Fe</p>
+            <p>Carrera 18 #67-59</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Reportes</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>50 jornadas</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <br><br>
+      <div class="mapa-container">
+        <google-map height="300px" width="100%" [center]="center" [zoom]="10">
+          <map-marker *ngFor="let m of markers" [position]="m.position" [title]="m.title">
+          </map-marker>
+        </google-map>
+      </div>
+    </div>
+  </div>
+</section>

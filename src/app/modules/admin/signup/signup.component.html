@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <div class="fondo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+          <div class="card card-register card-fondo text-black">
+            <div class="social-line text-center">
+              <img class="logo" src="./assets/img/logo.png" alt="logo" srcset="">
+
+            </div>
+            <form class="register-form" (ngSubmit)="onloggen()">
+              <label class="text-black">Correo Electrónico</label>
+              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="nc-icon nc-email-85"></i>
+                  </span>
+                </div>
+                <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="email" required>
+
+              </div>
+
+              <label class=" text-black">Contraseña</label>
+              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="nc-icon nc-key-25"></i>
+                  </span>
+                </div>
+                <input type="password" class="form-control" name="password" placeholder="Password"
+                  [(ngModel)]="password" required>
+              </div>
+              <button class="btn btn-success btn-block btn-round" type="submit">Iniciar Sesión</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer register-footer text-center text-success">
+        <h6>&copy;{{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> </h6>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

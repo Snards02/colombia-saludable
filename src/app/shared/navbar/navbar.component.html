@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top" color-on-scroll="500">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" routerLink="/home">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="" style="height: 40px;">
+                <!-- Ajusta la altura según tu diseño -->
+            </div>
+        </a>
+
+        <!-- Navegación -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
+            <ul class="navbar-nav d-flex flex-row gap-4 align-items-center mb-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home"><i class="nc-icon nc-book-bookmark"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/chat"><i class="nc-icon nc-book-bookmark"></i> Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/servicios"><i class="nc-icon nc-book-bookmark"></i> Servicios</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <!-- Botón Ingresar -->
+        <div class="d-none d-lg-block">
+            <a class="btn btn-success btn-round" [routerLink]="['/admin-root']">INGRESAR</a>
+        </div>
+
+        <!-- Botón de menú para móviles -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"
+            (click)="sidebarToggle()">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+
+    </div>
+</nav>

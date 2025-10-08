@@ -1,0 +1,402 @@
+<!-- <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.creative-tim.com">Creative Tim</a></li>
+                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
+                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                <span class="copyright">
+                    © {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> -->
+<footer class="colorfondo text-black" style="padding: 20px 0;">
+    <div class="container text-center" style="padding: 0;">
+        <div class="row justify-content-center" style="margin: 0;">
+            <div class="col-lg-6" style="margin-bottom: 10px;">
+                <h4 style="margin-bottom: 10px; font-size: 18px;">CRABS SALUD</h4>
+                <p style="margin-bottom: 10px; font-size: 14px; line-height: 1.4;">
+                    Ser el sistema líder en gestión inteligente de salud, optimizando recursos y garantizando atención equitativa y accesible.
+                </p>
+                <div class="social-icons" style="margin-top: 5px;">
+                    <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea separadora negra -->
+        <hr style="margin: 10px 0; background-color: #000; height: 1px; border: none;">
+
+        <div class="row" style="margin: 0;">
+            <div class="col-12">
+                <p class="mb-1" style="margin: 0; font-size: 12px;">&copy; 2025 Colombia Saludable. Todos los derechos reservados.</p>
+                <div style="font-size: 12px; margin-top: 5px;">
+                    <a href="#" class="text-black me-2">Política de Privacidad</a>
+                    <a href="#" class="text-black">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<style>
+    :root {
+        --primary: #0056b3;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --body-bg: #f8f9fa;
+        --header-height: 70px;
+        --sidebar-width: 250px;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--body-bg);
+        color: #333;
+        padding-top: var(--header-height);
+        min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+    }
+
+    .nav-link {
+        font-weight: 500;
+    }
+
+    .btn-primary {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+
+    .btn-primary:hover {
+        background-color: #004494;
+        border-color: #004494;
+    }
+
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        background: linear-gradient(135deg, #0056b3 0%, #00a0e9 100%);
+        color: white;
+        padding: 80px 0;
+        margin-bottom: 50px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+        position: relative;
+        text-align: center;
+    }
+
+    .section-title:after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: var(--primary);
+        margin: 15px auto;
+    }
+
+    .project-gallery .card-img-top {
+        height: 250px;
+    }
+
+    .testimonial {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-quote {
+        font-style: italic;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-author {
+        font-weight: 600;
+    }
+
+    footer {
+        background-color: var(--dark);
+        color: white;
+        padding: 40px 0 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: white;
+    }
+
+    .social-icons {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        color: rgba(255, 255, 255, 0.7);
+        margin-right: 15px;
+        transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: white;
+    }
+
+    /* Dashboard */
+    .dashboard-container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: var(--sidebar-width);
+        height: calc(100vh - var(--header-height));
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        background-color: white;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 100;
+        overflow-y: auto;
+    }
+
+    .sidebar-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-menu .nav-item {
+        margin-bottom: 5px;
+    }
+
+    .sidebar-menu .nav-link {
+        color: #333;
+        padding: 10px 20px;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-menu .nav-link:hover,
+    .sidebar-menu .nav-link.active {
+        background-color: rgba(0, 86, 179, 0.1);
+        color: var(--primary);
+        border-left: 3px solid var(--primary);
+    }
+
+    .sidebar-menu .nav-link i {
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
+
+    .main-content {
+        flex: 1;
+        margin-left: var(--sidebar-width);
+        padding: 20px;
+    }
+
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-card .icon {
+        font-size: 2rem;
+        color: var(--primary);
+    }
+
+    .progress-timeline {
+        position: relative;
+        padding-left: 50px;
+    }
+
+    .progress-timeline:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 15px;
+        height: 100%;
+        width: 2px;
+        background-color: var(--primary);
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .timeline-item:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -50px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        border: 2px solid var(--primary);
+    }
+
+    .timeline-item.active:before {
+        background-color: var(--primary);
+    }
+
+    .timeline-item.completed:before {
+        background-color: var(--success);
+        border-color: var(--success);
+    }
+
+    /* Chat */
+    .chat-container {
+        height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        margin-bottom: 15px;
+    }
+
+    .message {
+        margin-bottom: 15px;
+        max-width: 80%;
+    }
+
+    .message-sent {
+        margin-left: auto;
+        background-color: #dcf8c6;
+        padding: 10px 15px;
+        border-radius: 15px 15px 0 15px;
+    }
+
+    .message-received {
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 15px 15px 15px 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .message-time {
+        font-size: 0.75rem;
+        color: #888;
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+        .sidebar {
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+
+        .sidebar.show {
+            transform: translateX(0);
+        }
+
+        .main-content {
+            margin-left: 0;
+        }
+
+        .toggle-sidebar {
+            display: block !important;
+        }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+    
+    /* Loading spinners */
+    .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+    }
+
+    /* Toast notifications */
+    .toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+    }
+</style>

@@ -1,0 +1,104 @@
+<div class="dashboard-container">
+    
+<br>
+    <!-- Main Content -->
+     <h4 class="page-title">Reportes</h4>
+<br>
+        <div class="content-grid">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Jornadas realizadas chart -->
+                <div class="card jornadas-card">
+                    <h3 class="card-title">Jornadas realizadas</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar" [style.height.px]="getBarHeight(5)" data-value="5">
+                                <span class="bar-label">5</span>
+                            </div>
+                            <div class="bar" [style.height.px]="getBarHeight(13)" data-value="13">
+                                <span class="bar-label">13</span>
+                            </div>
+                            <div class="bar" [style.height.px]="getBarHeight(4)" data-value="4">
+                                <span class="bar-label">4</span>
+                            </div>
+                            <div class="bar" [style.height.px]="getBarHeight(8)" data-value="8">
+                                <span class="bar-label">8</span>
+                            </div>
+                            <div class="bar" [style.height.px]="getBarHeight(3)" data-value="3">
+                                <span class="bar-label">3</span>
+                            </div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>OCT</span>
+                            <span>DG</span>
+                            <span>RF</span>
+                            <span>SW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact section -->
+                <div class="impact-section">
+                    <h4 class="impact-title">Impacto en tu<br>comunidad</h4>
+                    <button class="download-btn">Descargar PDF</button>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div class="center-column">
+                <!-- Donut chart -->
+                <div class="card personas-card">
+                    <div class="donut-chart">
+                        <svg width="200" height="200" viewBox="0 0 200 200">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#f0f0f0" stroke-width="20" />
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#22C55E" stroke-width="20"
+                                stroke-dasharray="377" stroke-dashoffset="94.25" stroke-linecap="round"
+                                transform="rotate(-90 100 100)" />
+                            <text x="100" y="110" text-anchor="middle" class="donut-percentage">75%</text>
+                        </svg>
+                    </div>
+                    <p class="chart-subtitle">Personas<br>atendidas</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Stats -->
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="40" height="30" viewBox="0 0 40 30" fill="#22C55E">
+                                <path d="M5 25L15 15L25 20L35 10" />
+                                <path d="M30 10L35 10L35 15" stroke="#22C55E" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                        <div class="stat-number">50</div>
+                        <div class="stat-label">jornadas</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-text">
+                            <span class="stat-subtitle">Personas<br>beneficiadas:</span>
+                            <div class="stat-big-number">+1,500</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="doctor-section">
+                            <div class="doctor-icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="20" r="12" fill="#8B5A3C" />
+                                    <path d="M30 35C20 35 12 40 12 46V55H48V46C48 40 40 35 30 35Z" fill="#2563EB" />
+                                    <rect x="25" y="45" width="10" height="15" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="doctor-text">
+                                <span>Jornada en<br><strong>En persona</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>

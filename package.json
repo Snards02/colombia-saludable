@@ -1,0 +1,49 @@
+{
+  "name": "colombia-salud",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^18.2.14",
+    "@angular/cdk": "^18.2.14",
+    "@angular/common": "^18.2.14",
+    "@angular/compiler": "^18.2.14",
+    "@angular/core": "^18.2.14",
+    "@angular/fire": "^18.0.1",
+    "@angular/forms": "^18.2.14",
+    "@angular/google-maps": "^18.2.14",
+    "@angular/material": "^18.2.14",
+    "@angular/platform-browser": "^18.2.14",
+    "@angular/platform-browser-dynamic": "^18.2.14",
+    "@angular/router": "^18.2.14",
+    "@ng-bootstrap/ng-bootstrap": "^17.0.0",
+    "bootstrap": "4.5.3",
+    "firebase": "^12.2.1",
+    "h2-singenieria": "file:",
+    "leaflet": "^1.9.4",
+    "ngx-owl-carousel-o": "^18.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.21",
+    "@angular/cli": "^18.2.21",
+    "@angular/compiler-cli": "^18.2.14",
+    "@types/jasmine": "~5.1.0",
+    "@types/leaflet": "^1.9.20",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.5.4"
+  }
+}

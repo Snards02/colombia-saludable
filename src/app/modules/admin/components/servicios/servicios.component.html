@@ -1,0 +1,64 @@
+<!-- Dashboard Servicios -->
+<div id="dashboard-servicios" class="dashboard-section">
+    <h1 class="page-title">Servicios</h1>
+
+    <div class="row g-4">
+        <!-- Formulario añadir servicio -->
+        <div class="col-lg-6">
+            <div class="chart-card">
+                <h3 class="section-title">Añadir nuevo servicio</h3>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-custom" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-custom" placeholder="Dirección">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-custom" placeholder="Especialidad">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-custom" placeholder="Horario">
+                    </div>
+                    <button type="submit" class="btn-yellow w-100">Añadir servicio</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Servicios actuales -->
+        <div class="col-lg-6">
+            <div class="chart-card">
+                <h3 class="section-title">Servicios actuales</h3>
+                <div class="table-responsive">
+                    <table class="table table-custom">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Especialidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hospital Santa Fe</td>
+                                <td>General Medicine</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-2">Editar</button>
+                                    <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hospital Central</td>
+                                <td>Pedistria</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-2">Editar</button>
+                                    <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
