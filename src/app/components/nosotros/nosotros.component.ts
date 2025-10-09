@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ServicioService } from '../../services/servicios/servicio.service';
 
 @Component({
   selector: 'app-nosotros',
@@ -14,6 +15,8 @@ export class NosotrosComponent {
   messages: { sender: string; text: string }[] = [];
   userInput: string = '';
 
+  constructor(public servicio: ServicioService) { }
+
   sendMessage() {
     if (this.userInput.trim() === '') return;
 
@@ -21,13 +24,14 @@ export class NosotrosComponent {
 
     const userMessage = this.userInput;
     this.userInput = '';
-
-    setTimeout(() => {
-      this.messages.push({
-        sender: 'bot',
-        text: `Tú dijiste: "${userMessage}". Aquí va una respuesta automática.`
-      });
-    }, 600);
+    this.servicio.getprediccion(userMessage).subscribe(
+      (response) => {
+        console.log('API response:', response);
+        this.messages.push({ sender: 'bot', text: response.resultado });
+      },
+      (error) => {
+        console.error('Error fetching prediction:', error); 
+  });
   }
 
   handleKeyPress(event: KeyboardEvent) {
